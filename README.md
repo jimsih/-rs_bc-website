@@ -1,2 +1,2 @@
-# -rs_bc-website
+# ars_bc-website
 Website for the Ålidhem Royal Straight Bridge Club association
