@@ -1,0 +1,32 @@
+h1 {
+	color:rgb(50,100,150); 
+	font-size:300%; 
+	margin: 0;
+	text-align: center;
+	background-color: lightblue;
+	padding: 2%;	
+}
+
+h2 {
+	display: inline;
+	color: white;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.TopMenu {
+	background-color: grey;
+	text-align: center;
+	margin-top: 0;
+	padding: 1.2%;
+}
+
+.Label {
+	display: inline;
+	padding: 2%;
+}
+
+body {
+	margin: 0;
+
+}
+
