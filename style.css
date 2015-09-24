@@ -1,16 +1,21 @@
-h1 {
-	color:rgb(50,100,150); 
+h1 { 
 	font-size:300%; 
 	margin: 0;
 	text-align: center;
-	background-color: lightblue;
+	/*background-color: lightblue; */
 	padding: 2%;	
 }
 
-h2 {
-	display: inline;
+.HeaderLink {
+	text-decoration: none;
+	color:rgb(50,100,150);
+}
+
+.SlimFont {
 	color: white;
 	font-family: "Segoe UI",Arial,sans-serif;
+	font-size:125%;
+	text-decoration:none
 }
 
 .TopMenu {
@@ -20,7 +25,7 @@ h2 {
 	padding: 1.2%;
 }
 
-.Label {
+.TopLabel {
 	display: inline;
 	padding: 2%;
 }
