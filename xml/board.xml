@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <board>
+    <dealer></dealer>
+    <north>
+      <spades><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </north>
+    <east>
+      <spades><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </east>
+    <south>
+      <spades><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </south>
+    <west>
+      <spades><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </west>
+    <bids>
+      <b>Pass </b><b>Pass </b><b>1S </b><b>double </b><b>redouble </b>
+      <b> </b><b> </b><b> </b><b> </b>
+      <b> </b><b> </b><b> </b><b> </b>
+      <b> </b><b> </b><b> </b><b> </b>
+    </bids>
+    <realplay>
+      <
+    </realplay>
+  </board>
+</root>
+<!--var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rotate(20*Math.PI/180);
+ctx.fillRect(50,20,100,50); 
+-->

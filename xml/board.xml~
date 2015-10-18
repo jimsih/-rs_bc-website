@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <board>
+    <north>
+      <spades><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+      <bids></bids>
+    </north>
+  </board>
+</root>
+<!--var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rotate(20*Math.PI/180);
+ctx.fillRect(50,20,100,50); 
+-->
