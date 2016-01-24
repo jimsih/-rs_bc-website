@@ -3,7 +3,8 @@
   <head>
     <title></title>
   <script type="text/javascript" src="../functions.js"></script>
-  <link rel="shortcut icon" type="image/svg" href="../pictures/arsbc.svg">
+  <link rel="shortcut icon" type="image/svg" href="../pictures/arsbc.svg"/>
+  <title>ÅRS BC</title>
   <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css">
   </head>
   <body class="main" onload="setUp('../xml/members','members/members','content','../xml/head','head/headhome','head')">

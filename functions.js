@@ -35,7 +35,9 @@ else if (document.implementation && document.implementation.createDocument)
 }
 function replaceResult(file,style,target)
 {
-document.getElementById(target).removeChild(document.getElementById(target).firstChild);
+//document.getElementById(target).removeChild(document.getElementById(target).firstChild);
+var element = document.getElementById(target);
+element.innerHTML = '';
 displayResult(file,style,target);
 }
 function replaceTwoResult(file1,style1,target1,file2,style2,target2)
