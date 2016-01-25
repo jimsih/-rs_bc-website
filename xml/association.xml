@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
   <head>
-    <members lang="sv">Medlemmar</members>
-    <member lang="sv">Medlem</member>
-    <name lang="sv">Namn</name>
-    <office lang="sv">Uppdrag</office>
+    <earlier lang="sv">Tidigare</earlier>
+    <annual lang="sv">Årsmöte</annual>
+    <board lang="sv">Styrelsemöte</board>
+    <bylaws lang="sv">Stadgar</bylaws>
+    <all lang="sv">Alla dokument</all>
   </head>
-  <member>
-    <name lang="sv">Robert Grundström</name>
-    <office lang="sv">Kassör</office>
-  </member>
-  <member>
-    <name lang="sv">Jimmy</name>
-    <office lang="sv">Styrelseordförande</office>
-  </member>
-  <member>
-    <name lang="sv">Erik Arvidsson</name>
-    <office lang="sv"></office>
-  </member>
-  <member>
-    <name lang="sv">Sam Mångberg</name>
-    <office lang="sv"></office>
-  </member>
+  <bylaw>
+    <date>
+      <year>2015</year>
+      <month>10</month>
+      <day>14</day>
+      <hour>21</hour>
+      <minute>48</minute>
+    </date>
+    <document lang="sv">ARSBCStadgar.pdf</document>
+  </bylaw>
+  <annual>
+    <date>
+      <year>2015</year>
+      <month>10</month>
+      <day>14</day>
+      <hour>21</hour>
+      <minute>48</minute>
+    </date>
+    <document lang="sv">ARSBCStadgar.pdf</document>
+  </annual>
 </root>
