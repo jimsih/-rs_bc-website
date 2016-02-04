@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+body.main {
+  background-color: gray;
+}
+div.main {
+  background-color: white;
+  border: 2px solid;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto auto;
+}
+/* HEAD STYLES */
+#logo {
+  float: left;
+  width: 35%;
+}
+#name {
+  font-family: serif;
+  padding: 2% 2%;
+  float:left;
+  max-width: 63%;
+  font-weight: 900;
+}
+.top {
+  font-size: 270%;
+}
+.middle {
+  font-size: 140%;
+}
+.low {
+  font-size: 190%;
+}
+.clear {
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+div.center {
+  margin: 0px auto;
+  width: 400px;
+}
+div.bar {
+  clear: both;
+  margin: auto;
+  width: 95%;
+}
+div.link {
+  width: 14.32%;
+  padding: 20px 10px;
+  float: left;
+  text-align: center;
+  font-weight:600;
+  font-family: sans-serif;
+  min-width: 110px;
+}
+div.active {
+  background-color: #dddddd; 
+}
+div.link:hover {
+  background-color: orange;
+}
+#head {
+  overflow: hidden;
+  border-bottom: 1px solid;
+  margin: 0px;
+  width: 100%;
+  float: left;
+  display: block;
+}
+/* CONTENT STYLES */
+#content {
+  margin: 0px;
+  float: left;
+}
+.single {
+  width: 100%;
+}
+.double {
+  width: 75%;
+}
+/*SIDE LINK STYLES*/
+.sidelinkborder {
+  width: 25%;
+  margin: 0px;
+  float: left;
+}
+#side {
+  background-color: #eeeeee;
+  width:99%;
+  float: left;
+}
+div.sidelink {
+  width: 95%;
+  float:left;
+  margin: 0;
+  padding: 16px 2.5%;
+}
+div.sidelink:hover {
+  background-color: orange;
+}
+.bigtext {
+  font-size: 80%;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  float: left;
+}
+.smalltext {
+  font-size: 70%;
+  text-align: center;
+  width: 50%;
+  float:left;
+}
+/* FOOT STYLES */
+#foot {
+  clear:both;
+  float:left;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+div.ingress {
+  margin: 0 0;
+  text-align: justify;
+  float: left;
+  width: 100%;
+  font-weight: 600;
+}
+p.text {
+  margin: 20px 0;
+  text-align: justify;
+  font-size: 90%;
+}
+figure.newsimage {
+  width: 60%;
+  float: right;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 1px solid;
+}
+figcaption {
+  font-size: 70%;
+}
+div.padding {
+  margin: auto auto;
+  width: 97%;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}

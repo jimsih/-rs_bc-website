@@ -1,0 +1,18 @@
+{
+    "sv": {
+        "home":"Hem",
+        "news":"Nyheter",
+        "events":"Evenemang",
+        "members":"Medlemmar",
+        "association":"Förening",
+        "apply":"Bli medlem"
+    },
+    "en": {
+        "home":"Home",
+        "news":"News",
+        "events":"Events",
+        "members":"Members",
+        "association":"Association",
+        "apply":"Apply"
+    }
+}

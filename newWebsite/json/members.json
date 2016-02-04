@@ -1,0 +1,38 @@
+{
+    "head": {
+        "sv": {
+            "members":"Medlemmar",
+            "member":"Medlem",
+            "name":"Namn",
+            "office":"Uppdrag",
+            "email":"Email"
+        }
+    },
+    "members": [
+        {
+            "name":"Robert Grundström",
+            "offie":"Kassör",
+            "email":"kassor@alidhembridge.se"
+        },
+        {
+            "name":"Jimmy Sihlberg",
+            "offie":"Styrelseordförande",
+            "email":"ordforande@alidhembridge.se"
+        },
+        {
+            "name":"Erik Arvidsson",
+            "offie":"",
+            "email":"medlem@alidhembridge.se"
+        },
+        {
+            "name":"Sam Mångberg",
+            "offie":"",
+            "email":"medlem@alidhembridge.se"
+        },
+        {
+            "name":"Daniel Lundell",
+            "offie":"",
+            "email":"medlem@alidhembridge.se"
+        }
+    ]
+}
