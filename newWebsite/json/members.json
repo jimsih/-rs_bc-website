@@ -11,27 +11,27 @@
     "members": [
         {
             "name":"Robert Grundström",
-            "offie":"Kassör",
+            "office":"Kassör",
             "email":"kassor@alidhembridge.se"
         },
         {
             "name":"Jimmy Sihlberg",
-            "offie":"Styrelseordförande",
+            "office":"Styrelseordförande",
             "email":"ordforande@alidhembridge.se"
         },
         {
             "name":"Erik Arvidsson",
-            "offie":"",
+            "office":"",
             "email":"medlem@alidhembridge.se"
         },
         {
             "name":"Sam Mångberg",
-            "offie":"",
+            "office":"",
             "email":"medlem@alidhembridge.se"
         },
         {
             "name":"Daniel Lundell",
-            "offie":"",
+            "office":"",
             "email":"medlem@alidhembridge.se"
         }
     ]
