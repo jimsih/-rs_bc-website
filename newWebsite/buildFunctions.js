@@ -1,16 +1,16 @@
 
 function buildHeadMenus(lang) {
-  $.getJSON("../json/headMenus.json", function( data ) {
+  $.getJSON("json/headMenus.json", function( data ) {
     var items = [];
         
     $.each( data[lang], function( key, val ) {
-        items.push("<div id="+key + " class=link>" + val + "</div>" );
+        items.push("<li id="+key+"><a href=#>" + val + "</a></li>" );
     });
 
-    $( "<div id=headBar class=bar>" + items.join( "" ) +
-    "</div>" ).insertAfter( "#head" );
+    //$( "#headmenu" ).attr( "class", "bar");
+    $( "#headmenu" ).append(items.join( "" ));
 
-    $( "#home" ).attr( "class", "link active" )
+    $( "#home" ).attr( "class", "active" )
 
     bindHeadMenusEvent(lang);
   });
@@ -19,45 +19,73 @@ function buildHeadMenus(lang) {
 function bindHeadMenusEvent(lang) {
   $( "#home" ).click(function() {
       resetPage();
-      $( "#home" ).attr( "class", "link active" )
+      $( "#home" ).attr( "class", "active" )
       buildHomePage(lang);
   });
   
   $( "#news" ).click(function() {
       resetPage();
-      $( "#news" ).attr( "class", "link active" )
+      $( "#news" ).attr( "class", "active" )
       buildNewsPage(lang);
   });
   
   $( "#events" ).click(function() {
       resetPage();
-      $( "#events" ).attr( "class", "link active" )
+      $( "#events" ).attr( "class", "active" )
       buildEventsPage(lang);
   });
   
   $( "#members" ).click(function() {
       resetPage();
-      $( "#members" ).attr( "class", "link active" )
+      $( "#members" ).attr( "class", "active" )
       buildMembersPage(lang);
   });
   
   $( "#association" ).click(function() {
       resetPage();
-      $( "#association" ).attr( "class", "link active" )
+      $( "#association" ).attr( "class", "active" )
       buildAssociationPage(lang);
   });
   
   $( "#apply" ).click(function() {
       resetPage();
-      $( "#apply" ).attr( "class", "link active" )
+      $( "#apply" ).attr( "class", "active" )
       buildApplyPage(lang);
   });
+}
+
+function buildHomePage(lang) {
+    $( "#content" ).attr( "class", "single" )
+}
+
+function buildNewsPage(lang) {
+    $( "#content" ).attr( "class", "double" )
+    $( "#side" ).attr( "class", "sidelinkborder" )
+    
+    var items = [];
+    $.get("xml/news.xml", function( data ) {
+      /* Build sidelink */
+      $(data).find('news').each(function() {
+        items.push('<div id=sidenews, class=sidelink>');
+        items.push('<div class=bigtext>'+ $(this).find('title').text() +'</div>')
+        items.push('</div>');
+      });
+      $( "#side" ).append(items.join(""));
+      
+      /* Build content */
+      
+    });
+}
+
+function buildEventsPage(lang) {
+    $( "#content" ).attr( "class", "double" )
+    $( "#side" ).attr( "class", "sidelinkborder" )
 }
 
 function buildMembersPage(lang) {
   $( "#content" ).attr( "class", "single" )
   
-  $.getJSON("../json/members.json", function( data ) {
+  $.getJSON("json/members.json", function( data ) {
     var items = [];
     
     $( "<h2>"+data.head[lang]["members"]+
@@ -81,20 +109,6 @@ function buildMembersPage(lang) {
   });
 }
 
-function buildHomePage(lang) {
-    $( "#content" ).attr( "class", "single" )
-}
-
-function buildNewsPage(lang) {
-    $( "#content" ).attr( "class", "double" )
-    $( "#side" ).attr( "class", "sidelinkborder" )
-}
-
-function buildEventsPage(lang) {
-    $( "#content" ).attr( "class", "double" )
-    $( "#side" ).attr( "class", "sidelinkborder" )
-}
-
 function buildAssociationPage(lang) {
     $( "#content" ).attr( "class", "single" )
 }
@@ -104,11 +118,9 @@ function buildApplyPage(lang) {
 }
 
 
-
-
 function resetPage() {
-    $("#headBar").children().each(function( ) {
-        $( this ).attr( "class", "link" );
+    $("#headmenu").children().each(function( ) {
+        $( this ).attr( "class", "" );
     });
     
     $( "#content" ).html("");
