@@ -7,8 +7,7 @@ function buildHeadMenus(lang) {
         items.push("<li id="+key+"><a href=#>" + val + "</a></li>" );
     });
 
-    //$( "#headmenu" ).attr( "class", "bar");
-    $( "#headmenu" ).append(items.join( "" ));
+    $( "#headMenuItems" ).append(items.join( "" ));
 
     $( "#home" ).attr( "class", "active" )
 
@@ -119,7 +118,7 @@ function buildApplyPage(lang) {
 
 
 function resetPage() {
-    $("#headmenu").children().each(function( ) {
+    $("#headMenuItems").children().each(function( ) {
         $( this ).attr( "class", "" );
     });
     
