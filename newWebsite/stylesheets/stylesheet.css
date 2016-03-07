@@ -25,6 +25,11 @@ div.main {
   max-width: 63%;
   font-weight: 900;
 }
+
+#banner {
+  padding: 15px;
+}
+
 .top {
   font-size: 270%;
 }
@@ -171,3 +176,4 @@ table {
   padding: 15px; /* firefox bug fix */
   width: auto;
 }
+
