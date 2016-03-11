@@ -1,9 +1,10 @@
 body {
-  margin: 0;
+ margin: 0;
 }
 body.main {
   background-color: gray;
 }
+
 div.main {
   background-color: white;
   border: 2px solid;
@@ -11,6 +12,7 @@ div.main {
   max-width: 900px;
   margin: auto auto;
 }
+
 /* HEAD STYLES */
 #logo {
   float: left;
@@ -20,9 +22,14 @@ div.main {
   font-family: serif;
   padding: 2% 2%;
   float:left;
-  max-width: 63%;
+  max-width: 60%;
   font-weight: 900;
 }
+
+#banner {
+  padding: 0px;
+}
+
 .top {
   font-size: 270%;
 }
@@ -43,7 +50,7 @@ div.main {
 }
 div.center {
   margin: 0px auto;
-  width: 400px;
+  width: 350px;
 }
 div.bar {
   clear: both;
@@ -160,3 +167,13 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
+.navbar-brand {
+  padding: 0px; /* firefox bug fix */
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px; /* firefox bug fix */
+  width: auto;
+}
+

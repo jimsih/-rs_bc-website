@@ -27,7 +27,19 @@ div.main {
 }
 
 #banner {
-  padding: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#head {
+  overflow: hidden;
+  border-bottom: 1px solid;
+  margin: 0px;
+  width: 100%;
+  float: left;
+  display: block;
 }
 
 .top {
@@ -50,7 +62,7 @@ div.main {
 }
 div.center {
   margin: 0px auto;
-  width: 400px;
+  width: 350px;
 }
 div.bar {
   clear: both;
@@ -72,14 +84,7 @@ div.active {
 div.link:hover {
   background-color: orange;
 }
-#head {
-  overflow: hidden;
-  border-bottom: 1px solid;
-  margin: 0px;
-  width: 100%;
-  float: left;
-  display: block;
-}
+
 /* CONTENT STYLES */
 #content {
   margin: 0px;
@@ -168,6 +173,7 @@ table {
   margin-right: auto;
 }
 
+/* Bootstrap */
 .navbar-brand {
   padding: 0px; /* firefox bug fix */
 }
@@ -176,4 +182,28 @@ table {
   padding: 15px; /* firefox bug fix */
   width: auto;
 }
+
+.navbar {
+  
+}
+
+
+
+
+
+/* Home */
+
+#homeCarousel-container {
+  padding-bottom: 15px;
+}
+
+#homeCarousel {
+  max-width: 800px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+
+
+
 

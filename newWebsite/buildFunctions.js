@@ -16,6 +16,14 @@ function buildHeadMenus(lang) {
 }
 
 function bindHeadMenusEvent(lang) {
+
+  /* Makes the menu collapse when menu item is pressed */
+  $(document).on('click','.navbar-collapse.in',function(e) {
+      if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+          $(this).collapse('hide');
+      }
+  });
+  
   $( "#home" ).click(function() {
       resetPage();
       $( "#home" ).attr( "class", "active" )
@@ -37,7 +45,8 @@ function bindHeadMenusEvent(lang) {
   $( "#members" ).click(function() {
       resetPage();
       $( "#members" ).attr( "class", "active" )
-      buildMembersPage(lang);
+      buildMembersPage(lang);you
+      
   });
   
   $( "#association" ).click(function() {
@@ -54,35 +63,26 @@ function bindHeadMenusEvent(lang) {
 }
 
 function buildHomePage(lang) {
-    $( "#content" ).attr( "class", "single" )
+    $( "#page" ).load("home.html");
 }
 
 function buildNewsPage(lang) {
-    $( "#content" ).attr( "class", "double" )
-    $( "#side" ).attr( "class", "sidelinkborder" )
-    
+  
     var items = [];
     $.get("xml/news.xml", function( data ) {
-      /* Build sidelink */
       $(data).find('news').each(function() {
-        items.push('<div id=sidenews, class=sidelink>');
         items.push('<div class=bigtext>'+ $(this).find('title').text() +'</div>')
-        items.push('</div>');
       });
-      $( "#side" ).append(items.join(""));
-      
-      /* Build content */
+      $( "#page" ).append(items.join(""));
       
     });
 }
 
 function buildEventsPage(lang) {
-    $( "#content" ).attr( "class", "double" )
-    $( "#side" ).attr( "class", "sidelinkborder" )
+
 }
 
 function buildMembersPage(lang) {
-  $( "#content" ).attr( "class", "single" )
   
   $.getJSON("json/members.json", function( data ) {
     var items = [];
@@ -103,17 +103,17 @@ function buildMembersPage(lang) {
     
     });
   
-  $( items.join( "" ) ).appendTo( "#content" );
+  $( items.join( "" ) ).appendTo( "#page" );
   
   });
 }
 
 function buildAssociationPage(lang) {
-    $( "#content" ).attr( "class", "single" )
+  $( "#page" ).load("association.html");
 }
 
 function buildApplyPage(lang) {
-    $( "#content" ).attr( "class", "single" )
+
 }
 
 
@@ -122,8 +122,7 @@ function resetPage() {
         $( this ).attr( "class", "" );
     });
     
-    $( "#content" ).html("");
-    $( "#side" ).html("");
+    $( "#page" ).html("");
 }
 
 

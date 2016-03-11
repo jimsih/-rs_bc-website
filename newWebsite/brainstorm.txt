@@ -1,0 +1,5 @@
+
+NYHETER I HTML-FILER
+- Spara nyheter som egna html-filer och spara metadata om nyheterna i xml/json-filer så som datum och skribent. Då kan medlemmar skriva egna html-filer och ladda upp dessa på hemsidan. Vi kan erbjuda en färdig mall men alla kan ändra och justera efter egen vilja och förmåga. Blir dessutom mindre jobb att ladda in nyheterna :)
+
+
