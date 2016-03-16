@@ -17,7 +17,7 @@ function buildHeadMenus(lang) {
 
 function bindHeadMenusEvent(lang) {
 
-  /* Makes the menu collapse when menu item is pressed */
+  /* Makes the menu collapse when a menu item is pressed */
   $(document).on('click','.navbar-collapse.in',function(e) {
       if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
           $(this).collapse('hide');
@@ -40,6 +40,12 @@ function bindHeadMenusEvent(lang) {
       resetPage();
       $( "#events" ).attr( "class", "active" )
       buildEventsPage(lang);
+  });
+  
+  $( "#forum" ).click(function() {
+      resetPage();
+      $( "#forum" ).attr( "class", "active" )
+      buildForumPage(lang);
   });
   
   $( "#members" ).click(function() {
@@ -80,6 +86,10 @@ function buildNewsPage(lang) {
 
 function buildEventsPage(lang) {
 
+}
+
+function buildForumPage(lang) {
+  $( "#page" ).load("forum.html");
 }
 
 function buildMembersPage(lang) {

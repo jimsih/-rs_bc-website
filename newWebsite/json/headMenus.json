@@ -3,6 +3,7 @@
         "home":"Hem",
         "news":"Nyheter",
         "events":"Evenemang",
+        "forum":"Inlägg",
         "members":"Medlemmar",
         "association":"Förening",
         "apply":"Bli medlem"
@@ -11,6 +12,7 @@
         "home":"Home",
         "news":"News",
         "events":"Events",
+        "forum":"Forum",
         "members":"Members",
         "association":"Association",
         "apply":"Apply"

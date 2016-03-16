@@ -1,0 +1,64 @@
+<div class="container">
+
+
+
+  <form class="form-horizontal">
+    <div class="form-group">
+      <div class="col-md-4">  
+        <input id="forum-name" type="text" class="form-control" placeholder="Namn">
+       </div>
+    </div>
+    <div class="form-group">
+    <div class="col-md-6">  
+      <textarea id="forum-message-input" class="form-control" rows="1" placeholder="Skriv något kul"></textarea>
+    </div>
+    </div>
+  </form>
+  
+  <div id="forum-messages">
+    <!--
+    <div class="panel panel-info">
+      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
+      <div class="panel-body">Heeeej!</div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
+      <div class="panel-body">Heeeej!</div>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
+      <div class="panel-body">Heeeej!</div>
+    </div>
+    -->
+  </div>
+  
+</div>
+
+
+
+<script>
+  $( "#forum-message-input" ).keydown(function(event) {
+    if (event.which == 13) {
+      if (!event.shiftKey) {
+        event.preventDefault();
+        name = $( "#forum-name" ).val();
+        message = $(this).val();
+        date = new Date();
+        time = date.getHours() + ":" + date.getMinutes() + " " + date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+        
+        items = [];
+        items.push("<div class='panel panel-info'>");
+        items.push("<div class='panel-heading'>"+name+ " " + time +"</div>");
+        items.push("<div class='panel-body'>"+message+"</div>");
+        items.push("</div>");
+        
+        $( "#forum-messages" ).prepend(items.join(""));
+        $( "#forum-message-input" ).val("");  
+      }    
+    }
+  });
+</script>
+
+
+
+
