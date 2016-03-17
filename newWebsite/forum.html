@@ -38,13 +38,24 @@
 
 <script>
   $( "#forum-message-input" ).keydown(function(event) {
+    /* 13 == ENTER */
     if (event.which == 13) {
+    /* Holding shiftKey should not send message, just begin a new row */
       if (!event.shiftKey) {
         event.preventDefault();
+        
         name = $( "#forum-name" ).val();
         message = $(this).val();
-        date = new Date();
-        time = date.getHours() + ":" + date.getMinutes() + " " + date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+        
+        d = new Date();
+        year = d.getFullYear();
+        month = ("0" + (d.getMonth()+1)).slice(-2);
+        date = ("0" + d.getDate()).slice(-2);
+        hours = ("0" + d.getHours()).slice(-2);
+        minutes = ("0" + d.getMinutes()).slice(-2);
+        
+        
+        time = hours + ":" + minutes + " " + year + "-" + month + "-" + date;
         
         items = [];
         items.push("<div class='panel panel-info'>");
