@@ -5,31 +5,17 @@
   <form class="form-horizontal">
     <div class="form-group">
       <div class="col-md-4">  
-        <input id="forum-name" type="text" class="form-control" placeholder="Namn">
+        <input id="forum-name" type="text" class="form-control" placeholder="Namn" autocomplete="off">
        </div>
     </div>
     <div class="form-group">
     <div class="col-md-6">  
-      <textarea id="forum-message-input" class="form-control" rows="1" placeholder="Skriv något kul"></textarea>
+      <textarea id="forum-message-input" class="form-control" rows="1" placeholder="Skriv något kul" autocomplete="off"></textarea>
     </div>
     </div>
   </form>
   
   <div id="forum-messages">
-    <!--
-    <div class="panel panel-info">
-      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
-      <div class="panel-body">Heeeej!</div>
-    </div>
-    <div class="panel panel-info">
-      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
-      <div class="panel-body">Heeeej!</div>
-    </div>
-    <div class="panel panel-info">
-      <div class="panel-heading">Jimmy  23:14 2016-03-10</div>
-      <div class="panel-body">Heeeej!</div>
-    </div>
-    -->
   </div>
   
 </div>
@@ -60,14 +46,18 @@
         items = [];
         items.push("<div class='panel panel-info'>");
         items.push("<div class='panel-heading'>"+name+ " " + time +"</div>");
-        items.push("<div class='panel-body'>"+message+"</div>");
+        items.push("<div class='panel-body'><div class='messageTextarea'>"+message+"</div></div>");
+        
         items.push("</div>");
         
         $( "#forum-messages" ).prepend(items.join(""));
-        $( "#forum-message-input" ).val("");  
+        $( "#forum-message-input" ).val("");
+        
+        $.post("chatPost.php", {name: name, text: message});
       }    
     }
   });
+  
 </script>
 
 

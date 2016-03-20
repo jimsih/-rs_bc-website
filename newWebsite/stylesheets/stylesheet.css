@@ -210,5 +210,12 @@ table {
 
 /* Forum */
 
+.panel-body {
+  word-wrap: break-word;
+}
+
+.messageTextarea { 
+  white-space: pre-wrap;
+}
 
 
