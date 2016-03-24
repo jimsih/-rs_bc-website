@@ -30,8 +30,11 @@ function bindHeadMenusEvent(lang) {
     var a = $(event.target);
     var li = a.parent();
     li.attr("class", "active");
+    
     /* Push state, must be handled with onpopstate */
+    /* Use this later? Produces fake urls that must be handled on server side
     window.history.pushState({url: li.attr("id")},"", a.text().replace(/\s+/g, '.'));
+    */
   });
   
   $( "#home" ).click(function() {

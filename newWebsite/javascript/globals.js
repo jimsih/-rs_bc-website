@@ -5,6 +5,7 @@
 var intervalList = [];
 
 // Revert to a previously saved state
+/* 
 window.addEventListener('popstate', function(event) {
   if (event.state == null) {
     loadPage("home");
@@ -15,3 +16,4 @@ window.addEventListener('popstate', function(event) {
   loadPage(state.url);
   
 });
+*/

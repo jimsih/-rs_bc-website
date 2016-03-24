@@ -3,6 +3,7 @@
   $id = $_GET['id'];
 
   $dbhost = 'localhost';
+  $dbname = 'arsbc';
   $dbuser = 'www-data';
   $dbpass = 'arsbc';
   
@@ -10,7 +11,7 @@
          WHERE ID > '$id'";
   
   try {
-    $conn = new PDO("mysql:host=$dbhost;dbname=arsbcDB", $dbuser,$dbpass);
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser,$dbpass);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
