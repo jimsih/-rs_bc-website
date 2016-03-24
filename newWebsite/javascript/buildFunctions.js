@@ -4,7 +4,7 @@ function buildHeadMenus(lang) {
     var items = [];
         
     $.each( data[lang], function( key, val ) {
-        items.push("<li id="+key+"><a href=#>" + val + "</a></li>" );
+        items.push("<li id="+key+"><a>" + val + "</a></li>" );
     });
 
     $( "#headMenuItems" ).append(items.join( "" ));
@@ -24,48 +24,49 @@ function bindHeadMenusEvent(lang) {
       }
   });
   
+  $( "#headMenuItems" ).click(function(event) {
+    resetPage();
+    /* Selects the <li> tag */
+    var a = $(event.target);
+    var li = a.parent();
+    li.attr("class", "active");
+    /* Push state, must be handled with onpopstate */
+    window.history.pushState({url: li.attr("id")},"", a.text().replace(/\s+/g, '.'));
+  });
+  
   $( "#home" ).click(function() {
-      resetPage();
-      $( "#home" ).attr( "class", "active" )
       buildHomePage(lang);
   });
   
   $( "#news" ).click(function() {
-      resetPage();
-      $( "#news" ).attr( "class", "active" )
       buildNewsPage(lang);
   });
   
   $( "#events" ).click(function() {
-      resetPage();
-      $( "#events" ).attr( "class", "active" )
       buildEventsPage(lang);
   });
   
   $( "#forum" ).click(function() {
-      resetPage();
-      $( "#forum" ).attr( "class", "active" )
       buildForumPage(lang);
   });
   
   $( "#members" ).click(function() {
-      resetPage();
-      $( "#members" ).attr( "class", "active" )
-      buildMembersPage(lang);you
-      
+      buildMembersPage(lang);
   });
   
   $( "#association" ).click(function() {
-      resetPage();
-      $( "#association" ).attr( "class", "active" )
       buildAssociationPage(lang);
   });
   
   $( "#apply" ).click(function() {
-      resetPage();
-      $( "#apply" ).attr( "class", "active" )
       buildApplyPage(lang);
   });
+}
+
+function loadPage(page) {
+  resetPage();
+  $("#"+page).attr("class", "active");
+  $("#"+page).triggerHandler("click");
 }
 
 function buildHomePage(lang) {
@@ -89,7 +90,10 @@ function buildEventsPage(lang) {
 }
 
 function buildForumPage(lang) {
-  $( "#page" ).load("forum.html");
+  $( "#page" ).load("forum/forum.html", function() {
+    initForum();
+  });
+  
 }
 
 function buildMembersPage(lang) {
@@ -128,11 +132,15 @@ function buildApplyPage(lang) {
 
 
 function resetPage() {
-    $("#headMenuItems").children().each(function( ) {
-        $( this ).attr( "class", "" );
-    });
-    
-    $( "#page" ).html("");
+  $("#headMenuItems").children().each(function( ) {
+      $( this ).attr( "class", "" );
+  });
+  
+  $( "#page" ).html("");
+  
+  for	(i = 0; i < intervalList.length; i++) {
+    clearInterval(intervalList[i]);
+  }
 }
 
 
