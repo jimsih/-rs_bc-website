@@ -2,7 +2,7 @@
 
   $name = $_POST['name'];
   $text = $_POST['text'];  
-  $date = gmdate("Y-m-d H:i:s");
+  $date = gmdate("Y/m/d H:i:s");
   
   $dbhost = 'localhost';
   $dbuser = 'www-data';

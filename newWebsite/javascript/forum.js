@@ -82,7 +82,7 @@ function getMessages() {
 }
 
 function createMessage(id, name, text, time) {
-  d = new Date(time + " UTC");
+  d = new Date(time.replace(/-/g, '/') + " UTC");
   year = d.getFullYear();
   month = ("0" + (d.getMonth()+1)).slice(-2);
   date = ("0" + d.getDate()).slice(-2);

@@ -9,7 +9,7 @@ function buildHeadMenus(lang) {
 
     $( "#headMenuItems" ).append(items.join( "" ));
 
-    $( "#home" ).attr( "class", "active" )
+    $( "#home" ).attr( "class", "active" );
 
     bindHeadMenusEvent(lang);
   });
