@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <head>
+    <earlier lang="sv">Tidigare</earlier>
+    <link>
+	  <title lang="sv">Stadgar</title>
+	  <sublink>
+		<date>
+		  <year>2015</year>
+		  <month>09</month>
+		  <day>16</day>
+		</date>
+		<document lang="sv">150916ARSBCStadgar.pdf</document>
+	  </sublink>
+	  <sublink>
+		<date>
+		  <year>2016</year>
+		  <month>01</month>
+		  <day>07</day>
+		</date>
+		<document lang="sv">160107ARSBCStadgar.pdf</document>
+	  </sublink>
+
+	</link>
+    <board lang="sv">Styrelsemöte</board>
+    <link>
+	  <title lang="sv">Styrelsemöte</title>
+	  <sublink>
+		<date>
+		  <year>2015</year>
+		  <month>12</month>
+		  <day>03</day>
+		</date>
+		<document lang="sv">151203StyrelseProtokoll.pdf</document>
+	  </sublink>
+	  <sublink>
+		<date>
+		  <year>2015</year>
+		  <month>10</month>
+		  <day>22</day>
+		</date>
+		<document lang="sv">151022StyrelseProtokoll.pdf</document>
+	  </sublink>
+	</link>
+    <link>
+	  <title lang="sv">Årsmöte</title>
+	  <sublink>
+		<date>
+		  <year>2016</year>
+		  <month>01</month>
+		  <day>07</day>
+		</date>
+		<document lang="sv">160107Arsmote.pdf</document>
+	  </sublink>
+	</link>
+    <link>
+	  <title lang="sv">Motion</title>
+	  <sublink>
+		<date>
+		  <year>2015</year>
+		  <month>10</month>
+		  <day>27</day>
+		</date>
+		<document lang="sv">151027Motion.pdf</document>
+	  </sublink>
+	  <sublink>
+		<date>
+		  <year>2015</year>
+		  <month>12</month>
+		  <day>07</day>
+		</date>
+		<document lang="sv">151207Motion.pdf</document>
+	  </sublink>
+	</link>
+    <all lang="sv">Alla dokument</all>
+  </head>
+
+  <annual>
+    <date>
+      <year>2015</year>
+      <month>10</month>
+      <day>14</day>
+      <hour>21</hour>
+      <minute>48</minute>
+    </date>
+    <document lang="sv">ARSBCStadgar.pdf</document>
+  </annual>
+</root>

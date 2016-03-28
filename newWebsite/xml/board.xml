@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <board>
+    <dealer>South</dealer>
+    <north>
+      <spades><c>3 </c><c>5 </c><c>9 </c><c>E </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c>4 </c><c>J </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c>10 </c><c>J </c><c>D </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c>6 </c><c>7 </c><c>E </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </north>
+    <east>
+      <spades><c>2 </c><c>6 </c><c>8 </c><c>K </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c>2 </c><c>5 </c><c>6 </c><c>D </c><c>K </c><c>E </c><c> </c><c> </c></hearts>
+      <diamonds><c>K </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c>D </c><c>K </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </east>
+    <south>
+      <spades><c>J </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c>3 </c><c>4 </c><c>5 </c><c>6 </c><c>7 </c><c>8 </c><c> </c><c> </c></diamonds>
+      <clubs><c>2 </c><c>3 </c><c>4 </c><c>5 </c><c>8 </c><c>10 </c><c> </c><c> </c></clubs>
+    </south>
+    <west>
+      <spades><c>4 </c><c>10 </c><c>D </c><c> </c><c> </c><c> </c><c> </c><c> </c></spades>
+      <hearts><c>3 </c><c>7 </c><c>8 </c><c>9 </c><c>10 </c><c> </c><c> </c><c> </c></hearts>
+      <diamonds><c>2 </c><c>9 </c><c>E </c><c> </c><c> </c><c> </c><c> </c><c> </c></diamonds>
+      <clubs><c>9 </c><c>J </c><c> </c><c> </c><c> </c><c> </c><c> </c><c> </c></clubs>
+    </west>
+    <bids>
+      <b>Pass </b><b>Pass </b><b>1S </b><b>double </b><b>redouble </b>
+      <b> </b><b> </b><b> </b><b> </b>
+      <b> </b><b> </b><b> </b><b> </b>
+      <b> </b><b> </b><b> </b><b> </b>
+    </bids>
+    <realplay>
+      <opening></opening>
+    </realplay>
+    <altplay>
+      <opening></opening>
+    </altplay>
+  </board>
+</root>
+<!--var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.rotate(20*Math.PI/180);
+ctx.fillRect(50,20,100,50); 
+-->

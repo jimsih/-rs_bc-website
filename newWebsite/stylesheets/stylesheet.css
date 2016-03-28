@@ -13,6 +13,21 @@ div.main {
   margin: auto auto;
 }
 
+.pageHeight {
+  
+}
+
+.compress {
+  background-color: white;
+  /*border: 2px solid;*/
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto auto;
+  border-top-style: none;
+  border-bottom-style: none;
+  min-height: 400px;
+}
+
 /* HEAD STYLES */
 #logo {
   float: left;
@@ -26,21 +41,48 @@ div.main {
   font-weight: 900;
 }
 
-#banner {
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 0px;
-  padding-right: 0px;
+#head {
+
 }
 
-#head {
-  overflow: hidden;
-  border-bottom: 1px solid;
-  margin: 0px;
-  width: 100%;
-  float: left;
-  display: block;
+/* ------------- */
+
+/* Headmenu */
+
+#headMenu {
+  clear: both;
+  overflow: auto;
 }
+
+#headMenu .active {
+  background-color: #111;
+}
+
+#headMenu ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+/* Remove when bootstrap is removed */
+ul a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* --------- */
 
 .top {
   font-size: 270%;
@@ -86,6 +128,11 @@ div.link:hover {
 }
 
 /* CONTENT STYLES */
+
+#page {
+  min-height: 15cm;
+}
+
 #content {
   margin: 0px;
   float: left;
@@ -94,48 +141,81 @@ div.link:hover {
   width: 100%;
 }
 .double {
-  width: 75%;
+  width: 70%;
 }
 /*SIDE LINK STYLES*/
+
 .sidelinkborder {
   width: 25%;
   margin: 0px;
   float: left;
 }
+
 #side {
   background-color: #eeeeee;
   width:99%;
   float: left;
-}
-div.sidelink {
-  width: 95%;
-  float:left;
   margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#side .active {
+  background-color: #dddddd;
+}
+
+li.sidelink {
+  width: 100%;
+  float:left;
   padding: 16px 2.5%;
+  display: block;
 }
-div.sidelink:hover {
-  background-color: orange;
-}
-.bigtext {
-  font-size: 80%;
-  font-weight: 600;
+
+.sidelink .title {
+  display: block;
   text-align: center;
   width: 100%;
   float: left;
 }
+
+.sidelink .date {
+  float: left;
+  
+}
+
+.sidelink .time {
+  float: right;
+  
+}
+
+.sidelink:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.bigtext {
+  font-size: 80%;
+  font-weight: 600;
+
+}
 .smalltext {
   font-size: 70%;
-  text-align: center;
-  width: 50%;
-  float:left;
 }
 /* FOOT STYLES */
+
 #foot {
-  clear:both;
-  float:left;
-  width: 100%;
   text-align: center;
+  background-color: #333;
+  min-height: 50px;
+  overflow: auto;
 }
+
+#foot h2 {
+  color: #95CED8;
+}
+
+
+
+
 h2 {
   margin-bottom: 5px;
   font-size: 20px;
@@ -173,42 +253,15 @@ table {
   margin-right: auto;
 }
 
-/* Bootstrap */
-.navbar-brand {
-  padding: 0px; /* firefox bug fix */
-}
-.navbar-brand>img {
-  height: 100%;
-  padding: 15px; /* firefox bug fix */
-  width: auto;
-}
-
-.navbar {
-  
-}
-
-
-
-
 
 /* Home */
 
-#home {
-  max-width: 800px;
-}
-
-#homeCarousel-container {
-  padding-bottom: 15px;
-}
-
-#homeCarousel {
-  max-width: 800px;
-  max-height: 300px;
-  margin: 0 auto;
-}
-
 
 /* Forum */
+
+.forumMarginTop {
+  margin-top: 15px;
+}
 
 .panel-body {
   word-wrap: break-word;
@@ -217,5 +270,6 @@ table {
 .messageTextarea { 
   white-space: pre-wrap;
 }
+
 
 

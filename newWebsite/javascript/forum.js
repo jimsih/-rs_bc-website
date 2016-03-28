@@ -52,7 +52,7 @@ function bindEvents() {
 
         $( "#forum-message-input" ).val("");
         
-        $.post('/newWebsite/forum/chatPost.php', {name: name, text: message}, function() {
+        $.post('/newWebsite/pages/forum/chatPost.php', {name: name, text: message}, function() {
           getMessages();
         });
       }    
@@ -68,7 +68,7 @@ function getMessages() {
     id = fm.children().first().attr('id');
   }
   
-  $.get('/newWebsite/forum/chatGet.php', {id: id}, function(data) {
+  $.get('/newWebsite/pages/forum/chatGet.php', {id: id}, function(data) {
   
     var messages = JSON.parse(data);
     
@@ -82,13 +82,14 @@ function getMessages() {
 }
 
 function createMessage(id, name, text, time) {
-  d = new Date(time.replace(/-/g, '/') + " UTC");
-  year = d.getFullYear();
-  month = ("0" + (d.getMonth()+1)).slice(-2);
-  date = ("0" + d.getDate()).slice(-2);
-  hours = ("0" + d.getHours()).slice(-2);
-  minutes = ("0" + d.getMinutes()).slice(-2);
-  
+  d = getDateFormat(time.replace(/-/g, '/') + " UTC");
+
+  year = d.year;
+  month = d.month;
+  date = d.date;
+  hours = d.hours;
+  minutes = d.minutes;
+
   time = hours + ":" + minutes + " " + year + "-" + month + "-" + date;
   
   items = [];
@@ -100,3 +101,6 @@ function createMessage(id, name, text, time) {
   
   return items.join("");
 }
+
+
+

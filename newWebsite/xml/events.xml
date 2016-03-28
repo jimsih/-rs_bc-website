@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <event>
+    <title lang="sv">Torsdagsbridge</title>
+    <date>
+      <year>2016</year>
+      <month>03</month>
+      <day>03</day>
+      <hour>18</hour>
+      <minute>00</minute>
+    </date>
+    <description lang="sv">Det återkommande evenemanget som för så många utgör veckans milstolpe1.
+	</description>
+	<image></image>
+    <legend lang="sv"></legend>
+  </event>
+
+  <event>
+    <title lang="sv">Torsdagsbridge</title>
+    <date>
+      <year>2016</year>
+      <month>03</month>
+      <day>10</day>
+      <hour>18</hour>
+      <minute>00</minute>
+    </date>
+    <description lang="sv">Det återkommande evenemanget som för så många utgör veckans milstolpe2.
+	</description>
+	<image></image>
+    <legend lang="sv"></legend>
+  </event>
+
+  <event>
+    <title lang="sv">Torsdagsbridge</title>
+    <date>
+      <year>2016</year>
+      <month>03</month>
+      <day>17</day>
+      <hour>18</hour>
+      <minute>00</minute>
+    </date>
+    <description lang="sv">Det återkommande evenemanget som för så många utgör veckans milstolpe3.
+	</description>
+	<image></image>
+    <legend lang="sv"></legend>
+  </event>
+
+  <event>
+    <title lang="sv">Torsdagsbridge</title>
+    <date>
+      <year>2016</year>
+      <month>03</month>
+      <day>24</day>
+      <hour>18</hour>
+      <minute>00</minute>
+    </date>
+    <description lang="sv">Det återkommande evenemanget som för så många utgör veckans milstolpe4.
+	</description>
+	<image></image>
+    <legend lang="sv"></legend>
+  </event>
+
+
+</root>

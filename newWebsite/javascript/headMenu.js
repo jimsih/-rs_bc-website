@@ -1,5 +1,6 @@
 
 function buildHeadMenus(lang) {
+/*
   $.getJSON("json/headMenus.json", function( data ) {
     var items = [];
         
@@ -13,23 +14,17 @@ function buildHeadMenus(lang) {
 
     bindHeadMenusEvent(lang);
   });
+*/
+
+  $( "#home" ).attr( "class", "active" );
+  bindHeadMenusEvent(lang);
 }
 
 function bindHeadMenusEvent(lang) {
-
-  /* Makes the menu collapse when a menu item is pressed */
-  $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-          $(this).collapse('hide');
-      }
-  });
   
   $( "#headMenuItems" ).click(function(event) {
     resetPage();
-    /* Selects the <li> tag */
-    var a = $(event.target);
-    var li = a.parent();
-    li.attr("class", "active");
+    $(event.target).attr("class", "active");
     
     /* Push state, must be handled with onpopstate */
     /* Use this later? Produces fake urls that must be handled on server side
@@ -73,30 +68,27 @@ function loadPage(page) {
 }
 
 function buildHomePage(lang) {
-    $( "#page" ).load("home.html");
+  $( "#page" ).load("pages/home/home.html");
 }
 
 function buildNewsPage(lang) {
   
-    var items = [];
-    $.get("xml/news.xml", function( data ) {
-      $(data).find('news').each(function() {
-        items.push('<div class=bigtext>'+ $(this).find('title').text() +'</div>')
-      });
-      $( "#page" ).append(items.join(""));
-      
-    });
+  $( "#page" ).load("pages/news/news.html", function() {
+    initNews();
+  });
 }
 
 function buildEventsPage(lang) {
-
+  $( "#page" ).load("pages/events/events.html", function() {
+    initEvents();
+  });
+  
 }
 
 function buildForumPage(lang) {
-  $( "#page" ).load("forum/forum.html", function() {
+  $( "#page" ).load("pages/forum/forum.html", function() {
     initForum();
   });
-  
 }
 
 function buildMembersPage(lang) {
@@ -126,7 +118,7 @@ function buildMembersPage(lang) {
 }
 
 function buildAssociationPage(lang) {
-  $( "#page" ).load("association.html");
+  $( "#page" ).load("pages/association/association.html");
 }
 
 function buildApplyPage(lang) {
@@ -135,9 +127,7 @@ function buildApplyPage(lang) {
 
 
 function resetPage() {
-  $("#headMenuItems").children().each(function( ) {
-      $( this ).attr( "class", "" );
-  });
+  $("#headMenuItems").children().removeClass("active");
   
   $( "#page" ).html("");
   

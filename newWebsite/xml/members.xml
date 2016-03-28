@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <head>
+    <members lang="sv">Medlemmar</members>
+    <member lang="sv">Medlem</member>
+    <name lang="sv">Namn</name>
+    <office lang="sv">Uppdrag</office>
+    <email lang="sv">Email</email>
+  </head>
+  <member>
+    <name lang="sv">Robert Grundström</name>
+    <office lang="sv">Kassör</office>
+    <email lang="sv">kassor@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Jimmy Sihlberg</name>
+    <office lang="sv">Styrelseordförande</office>
+    <email lang="sv">ordforande@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Erik Arvidsson</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Sam Mångberg</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Daniel Lundell</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Max Bäckström</name>
+    <office lang="sv">Vice styrelseordförande</office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Staffan Widerberg</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Moa Löfdahl</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Anja Korhonen</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+  <member>
+    <name lang="sv">Emelie Edström</name>
+    <office lang="sv"></office>
+    <email lang="sv">medlem@alidhembridge.se</email>
+  </member>
+</root>
