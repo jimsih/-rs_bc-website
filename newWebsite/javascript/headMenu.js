@@ -92,28 +92,10 @@ function buildForumPage(lang) {
 }
 
 function buildMembersPage(lang) {
-  
-  $.getJSON("json/members.json", function( data ) {
-    var items = [];
-    
-    $( "<h2>"+data.head[lang]["members"]+
-    "</h2>" ).appendTo( "#content" );
-    
-    $.each( data["members"], function( ) {
-      items.push("<div style='border:3px groove; padding:0px 10px 30px 10px; margin:10px auto; width:70%'>");
-      
-      items.push("<figure><img style='width:10%; float:right' src=../../pictures/arsbc.svg></img></figure>");
-      
-      items.push("<div style='text-align:justify; clear:left; width:100%'><div style='float:left; width:20%'>"+data.head[lang]["name"]+"</div><div style='float:left; width:40%'>"+this.name+"</div></div>");
-      
-      items.push("<div style='text-align:justify; clear:left; width:100%'><div style='float:left; width:20%'>"+data.head[lang]["office"]+"</div><div style='float:left; width:40%'>"+this.office+"</div></div>");
-      
-      items.push("<div style='text-align:justify; clear:left; width:100%'><div style='float:left; width:20%'>"+data.head[lang]["email"]+"</div><div style='float:left; width:40%'>"+this.email+"</div></div></div>");
-    
-    });
-  
-  $( items.join( "" ) ).appendTo( "#page" );
-  
+  $( "#page" ).load("pages/members/members.html", function() {
+    $.get('loadXHTML.php', {xml: 'xml/members.xml', xsl:'pages/members/members.xsl'}, function(data) {
+    $("#content").html(data);
+  }); 
   });
 }
 

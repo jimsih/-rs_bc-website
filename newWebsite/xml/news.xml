@@ -10,7 +10,7 @@
       <hour>21</hour>
       <minute>48</minute>
     </date>
-    <link>xml/news/hemsida</link>
+    <link>xml/news/hemsida.xml</link>
   </news>
 
   <news>
@@ -23,6 +23,6 @@
       <hour>18</hour>
       <minute>50</minute>
     </date>
-    <link>xml/news/sverok</link>
+    <link>xml/news/sverok.xml</link>
   </news>
 </root>

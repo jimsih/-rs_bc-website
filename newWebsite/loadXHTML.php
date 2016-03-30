@@ -5,11 +5,11 @@ $xslFile = $_GET['xsl'];
 
 // Load xml file
 $xmlDoc = new DOMDocument;
-$xmlDoc->load($xmlFile.".xml");
+$xmlDoc->load($xmlFile);
 
 // load xsl file
 $xslDoc = new DOMDocument;
-$xslDoc->load($xslFile.".xsl");
+$xslDoc->load($xslFile);
 
 $proc = new XSLTProcessor;
 

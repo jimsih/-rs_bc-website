@@ -2,7 +2,7 @@
 /* TODO: Only load a fixed number of old messages. Load more messages when scrolling to bottom */ 
 
 function initForum() {
-  bindEvents();
+  bindForumEvents();
   getMessages();
   
   /* Get new messages every 5 second */
@@ -14,7 +14,7 @@ function initForum() {
   
 }
 
-function bindEvents() {
+function bindForumEvents() {
   /* Scroll down a bit when using mobile */
   $("#forum-name-input").click(function() {
     if (window.screen.width < 480) {
@@ -93,10 +93,9 @@ function createMessage(id, name, text, time) {
   time = hours + ":" + minutes + " " + year + "-" + month + "-" + date;
   
   items = [];
-  items.push("<div id="+id+" class='panel panel-info'>");
-  items.push("<div class='panel-heading'>"+name+ " " + time +"</div>");
-  items.push("<div class='panel-body'><div class='messageTextarea'>"+text+"</div></div>");
-  
+  items.push("<div id="+id+" class='message'>");
+  items.push("<div class='messagehead'>"+name+ " " + time +"</div>");
+  items.push("<div class='messagebody'>"+text+"</div>");  
   items.push("</div>");
   
   return items.join("");
