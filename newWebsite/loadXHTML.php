@@ -1,11 +1,11 @@
 <?php
 
-//$xmlFile = $_GET['xml'];
-//$xslFile = $_GET['xsl'];
+$xmlFile = $_GET['xml'];
+$xslFile = $_GET['xsl'];
 
 /* Command line debugging */
- $xmlFile = $argv[1];
- $xslFile = $argv[2];
+// $xmlFile = $argv[1];
+//$xslFile = $argv[2];
 
 // Load xml file
 $xmlDoc = new DOMDocument;
