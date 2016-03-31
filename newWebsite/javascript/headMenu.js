@@ -22,7 +22,7 @@ function buildHeadMenus(lang) {
 
 function bindHeadMenusEvent(lang) {
   
-  $( "#headMenuItems" ).click(function(event) {
+  $( "#headMenuItems a" ).click(function(event) {
     resetPage();
     $(event.target).addClass("active");
     

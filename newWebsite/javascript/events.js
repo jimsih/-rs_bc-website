@@ -6,7 +6,7 @@ function initEvents() {
   $.getJSON("/newWebsite/json/events.json", function( data ) {
   
     events = data.events;
-    events = sortByDate(events, "date", true);
+    sortByDate(events, "date", true);
     
     bindSidelinkEvents();
     loadEventSidelinks();

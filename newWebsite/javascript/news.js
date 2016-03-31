@@ -18,6 +18,7 @@ function bindSidelinkNews() {
     var link = li.attr("link");
     console.log(link);
     $.get('loadXHTML.php', {xml: link, xsl:'pages/news/news.xsl'}, function(data) {
+    alert(data);
     $("#content").html(data);
   }); 
 

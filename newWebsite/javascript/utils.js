@@ -23,5 +23,5 @@ function sortByDate(array, dateElement, decrease) {
     });
   }
   
-  return array;
+  //return array;
 }

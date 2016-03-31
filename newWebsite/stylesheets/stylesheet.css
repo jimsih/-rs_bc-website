@@ -13,6 +13,10 @@ div.main {
   margin: auto auto;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .hidden {
   display: none;
 }
@@ -165,6 +169,11 @@ div.link:hover {
   word-wrap: break-word;
 }
 
+.sidelink:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
 .sidelink .title {
   text-align: center;
   width: 100%;
@@ -183,10 +192,17 @@ div.link:hover {
   float: left;
 }
 
-.sidelink:hover {
-  background-color: orange;
+
+
+.sidesublink {
+  padding: 2px 0 2px 0;
+}
+
+.sidesublink:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
+
 .bigtext {
   font-size: 80%;
   font-weight: 600;
