@@ -13,6 +13,9 @@ div.main {
   margin: auto auto;
 }
 
+.hidden {
+  display: none;
+}
 
 /* HEAD STYLES */
 #logo {
@@ -125,12 +128,13 @@ div.link:hover {
 #content {
   margin: 0px;
   float: left;
+  z-index: -1;
 }
 .single {
   width: 100%;
 }
 .double {
-  width: 70%;
+  width: 75%;
 }
 /*SIDE LINK STYLES*/
 
@@ -157,7 +161,7 @@ div.link:hover {
   width: 100%;
   float:left;
   padding: 16px 0 16px 0;
-  display: block;
+  /*display: block;*/
   word-wrap: break-word;
 }
 

@@ -6,18 +6,16 @@ function initEvents() {
   $.getJSON("/newWebsite/json/events.json", function( data ) {
   
     events = data.events;
-    events.sort(function(a, b) {
-      return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
+    events = sortByDate(events, "date", true);
     
     bindSidelinkEvents();
-    fillSidelink();
+    loadEventSidelinks();
     $("#side").children().first().trigger("click");
   });
   
 }
 
-function fillSidelink() {
+function loadEventSidelinks() {
   $.each(events, function() {
     title = this.title;
     datetime = this.date.split(" ");

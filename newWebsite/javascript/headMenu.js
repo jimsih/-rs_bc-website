@@ -24,7 +24,7 @@ function bindHeadMenusEvent(lang) {
   
   $( "#headMenuItems" ).click(function(event) {
     resetPage();
-    $(event.target).attr("class", "active");
+    $(event.target).addClass("active");
     
     /* Push state, must be handled with onpopstate */
     /* Use this later? Produces fake urls that must be handled on server side
@@ -100,7 +100,9 @@ function buildMembersPage(lang) {
 }
 
 function buildAssociationPage(lang) {
-  $( "#page" ).load("pages/association/association.html");
+  $( "#page" ).load("pages/association/association.html", function() {
+    initAssociation();
+  });
 }
 
 function buildApplyPage(lang) {

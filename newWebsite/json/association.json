@@ -1,0 +1,45 @@
+{
+
+  "statutes": [
+    {
+      "date": "2015/09/16",
+      "link": "documents/150916ARSBCStadgar.pdf"
+    },
+    {
+      "date": "2016/01/07",
+      "link": "documents/160107ARSBCStadgar.pdf"
+    }
+  ],
+  
+  "board": [
+    {
+      "date": "2015/12/03",
+      "link": "documents/151203StyrelseProtokoll.pdf"
+    },
+    {
+      "date": "2015/10/22",
+      "link": "documents/151022StyrelseProtokoll.pdf"
+    }
+    
+  ],
+  
+  "annual": [
+    {
+    "date": "2016/01/07",
+    "link": "documents/160107Arsmote.pdf"
+    }
+    
+  ],
+  
+  "motion": [
+    {
+      "date": "2015/10/27",
+      "link": "documents/151027Motion.pdf"
+    },
+    {
+      "date": "2015/12/07",
+      "link": "documents/151207Motion.pdf"
+    }
+  ]
+
+}

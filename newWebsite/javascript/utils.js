@@ -10,3 +10,18 @@ function getDateFormat(date) {
   
   return {"year":year, "month":month, "date":date, "hours":hours, "minutes":minutes, "seconds":seconds};
 }
+
+/* decrease - bool value */
+function sortByDate(array, dateElement, decrease) {
+  if (decrease) {
+    array.sort(function(a, b) {
+      return !(new Date(a.dateElement).getTime() - new Date(b.dateElement).getTime());
+    }); 
+ } else {
+    array.sort(function(a, b) {
+      return new Date(a.dateElement).getTime() - new Date(b.dateElement).getTime();
+    });
+  }
+  
+  return array;
+}
