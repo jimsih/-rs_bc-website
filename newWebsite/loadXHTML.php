@@ -4,7 +4,7 @@ $xmlFile = $_GET['xml'];
 $xslFile = $_GET['xsl'];
 
 /* Command line debugging */
-// $xmlFile = $argv[1];
+//$xmlFile = $argv[1];
 //$xslFile = $argv[2];
 
 // Load xml file

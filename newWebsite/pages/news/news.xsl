@@ -9,19 +9,19 @@
     <body>
     
     <div class="padding">
-      <h2><xsl:value-of select="title[@lang=$lang]"/></h2>
-      <div class="ingress"><p><xsl:value-of select="ingress[@lang=$lang]"/></p></div>
-	  <xsl:if test="image != ''">
+      <h2><xsl:value-of select="news/title[@lang=$lang]"/></h2>
+      <div class="ingress"><p><xsl:value-of select="news/ingress[@lang=$lang]"/></p></div>
+	  <xsl:if test="news/image != ''">
 	  <figure class="newsimage">
         <img width="100%">
           <xsl:attribute name="src">
-            <xsl:text>pictures/</xsl:text><xsl:value-of select="image"/>
+            <xsl:text>pictures/</xsl:text><xsl:value-of select="news/image"/>
           </xsl:attribute>
         </img>
-        <figcaption><xsl:value-of select="legend[@lang=$lang]"/></figcaption>
+        <figcaption><xsl:value-of select="news/legend[@lang=$lang]"/></figcaption>
       </figure>
 	  </xsl:if>
-      <xsl:for-each select="p">
+      <xsl:for-each select="news/p">
       <p class="text"><xsl:value-of select="."/></p>
       </xsl:for-each>
     </div>
