@@ -15,11 +15,11 @@ function getDateFormat(date) {
 function sortByDate(array, dateElement, decrease) {
   if (decrease) {
     array.sort(function(a, b) {
-      return !(new Date(a.dateElement).getTime() - new Date(b.dateElement).getTime());
+      return new Date(b[dateElement]) - new Date(a[dateElement]);
     }); 
  } else {
     array.sort(function(a, b) {
-      return new Date(a.dateElement).getTime() - new Date(b.dateElement).getTime();
+      return new Date(a[dateElement]) - new Date(b[dateElement]);
     });
   }
   

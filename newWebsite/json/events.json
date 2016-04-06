@@ -1,25 +1,29 @@
 {
   "events": [
-
+    {
+      "title":"Torsdagsbridge",
+      "date":"2016/04/07 18:00",
+      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe. Planeras att vara minst 8 personer vid detta tillfälle och möjligen omgång 2 i seriespelet, får inte missas!"
+    },
     {
       "title":"Torsdagsbridge",
       "date":"2016/03/03 18:00",
-      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe1"
+      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe"
     },
     {
       "title":"Torsdagsbridge",
       "date":"2016/03/10 18:00",
-      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe2"
+      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe"
     },    
     {
       "title":"Torsdagsbridge",
       "date":"2016/03/17 18:00",
-      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe3"
+      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe"
     },
     {
       "title":"Torsdagsbridge",
       "date":"2016/03/24 18:00",
-      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe4"
+      "description": "Det återkommande evenemanget som för så många utgör veckans milstolpe"
     }
   ]
 
