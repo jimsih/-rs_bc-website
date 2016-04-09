@@ -3,7 +3,7 @@ var events = [];
 
 function initEvents() {
   
-  $.getJSON("/newWebsite/json/events.json", function( data ) {
+  $.getJSON("json/events.json", function( data ) {
   
     events = data.events;
     sortByDate(events, "date", true);
