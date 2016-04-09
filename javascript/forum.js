@@ -52,7 +52,7 @@ function bindForumEvents() {
 
         $( "#forum-message-input" ).val("");
         
-        $.post('/newWebsite/pages/forum/chatPost.php', {name: name, text: message}, function() {
+        $.post('pages/forum/chatPost.php', {name: name, text: message}, function() {
           getMessages();
         });
       }    
@@ -68,7 +68,7 @@ function getMessages() {
     id = fm.children().first().attr('id');
   }
   
-  $.get('/newWebsite/pages/forum/chatGet.php', {id: id}, function(data) {
+  $.get('pages/forum/chatGet.php', {id: id}, function(data) {
   
     var messages = JSON.parse(data);
     
