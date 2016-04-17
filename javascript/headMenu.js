@@ -68,7 +68,9 @@ function loadPage(page) {
 }
 
 function buildHomePage(lang) {
-  $( "#page" ).load("pages/home/home.html");
+  $( "#page" ).load("pages/home/home.html", function() {
+    initHome();
+  });
 }
 
 function buildNewsPage(lang) {

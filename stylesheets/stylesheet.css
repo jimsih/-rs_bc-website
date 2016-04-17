@@ -266,6 +266,19 @@ table {
 
 
 /* Home */
+#homeSubmenu {
+  overflow: auto;
+  margin: auto;
+  padding-left: 27%;
+}
+
+#homeSubmenu a {
+  color: black; 
+}
+
+#homeSubmenu a:hover {
+  color: grey; 
+}
 
 
 /* Forum */

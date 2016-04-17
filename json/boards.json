@@ -1,0 +1,31 @@
+{
+  "board":  {
+	"name": "Första",
+	"dealer": "north",
+    "zone": "none",
+	"north":  {
+	  "clubs": [9,3],
+	  "diamonds": ["A","K","Q","J",5,4],
+	  "hearts": ["K"],
+	  "spades": ["Q",8,5,3]
+	},
+	"east":  {
+	  "clubs": ["Q",10,6,5,4],
+	  "diamonds": [6,2],
+	  "hearts": ["J",9,7,5,4],
+	  "spades": [7]
+	},
+	"south":  {
+	  "clubs": [],
+	  "diamonds": [10,9,8,7,3],
+	  "hearts": ["A","Q",3,2],
+	  "spades": ["K","J",10,4]
+	},
+	"west":  {
+	  "clubs": ["A","K","J",8,7,2],
+	  "diamonds": [],
+	  "hearts": [10,8,6],
+	  "spades": ["A",9,6,2]
+	}
+  } 
+}
