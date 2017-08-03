@@ -1,0 +1,40 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block page %}
+
+<div class="sidelinkborder">
+  <ul id="side">
+		{% for news in news_list %}
+		<a class="sidelink {% if news.id == active.id %} active {% endif %}" href="{% url 'news:detail' news.id %}">
+		
+		<span class="title bigtext"> {{ news.title }} </span>
+	  <span class="date smalltext"> {{ news.publish_date|date:"Y M d" }}</span>
+ 	  <span class="time smalltext"> {{ news.publish_date|date:"H:i" }} </span>
+		
+		</a>
+		{% endfor %}
+	</ul>
+</div>
+
+<div class="double" id="content">
+	<div class="padding">
+		<h2> {{ active.title }} </h2>
+		<div class="ingress"><p> {{ active.ingress }} </p></div>
+	
+		<figure class="newsimage">
+			<img width="100%" src="
+			{% if active.image %} 
+				{{ active.image.url }}
+			{% else %}
+				{% static 'home/images/arsbc.svg' %}
+			{% endif %}">
+			<figcaption>{{ active.legend }}</figcaption>
+		</figure>
+	
+		<p class="news-free-text"> {{ active.body }} </p>
+	</div>
+</div>
+
+{% endblock %}

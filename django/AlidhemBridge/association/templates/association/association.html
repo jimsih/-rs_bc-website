@@ -1,0 +1,56 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block page %}
+
+<script type="text/javascript" src="{% static 'association/js/association.js' %}"></script>
+
+<div class="sidelinkborder">
+	<ul id="side">
+		<li> <a class="sidelink title bigtext" href="{% url 'association:about' %}"> Om ÅRSBC </a> </li>
+		
+		<li id="statutes" class="sidelink"><span class="title bigtext">Stadgar</span></li>
+		<ul id="statuteslist" class="hidden clearfix">
+			{% for statute in statutes %}
+				<li> 
+					<a class='sidesublink smalltext' href="{% url 'association:detail_statute' statute.id %}"> {{ statute.date|date:"Y M d" }} </a>
+				</li>
+			{% endfor %}
+		</ul>
+		
+		<li id="board" class="sidelink"><span class="title bigtext">Styrelsemöte</span></li>
+		<ul id="boardlist" class="hidden clearfix">
+			{% for board in boards %}
+				<li> 
+					<a class='sidesublink smalltext' href="{% url 'association:detail_board' board.id %}"> {{ board.date|date:"Y M d" }} </a>
+				</li>
+			{% endfor %}
+		</ul>
+		
+		<li id="annual" class="sidelink"><span class="title bigtext">Årsmöte</span></li>
+		<ul id="annuallist" class="hidden clearfix">
+			{% for annual in annuals %}
+				<li> 
+					<a class='sidesublink smalltext' href="{% url 'association:detail_annual' annual.id %}"> {{ annual.date|date:"Y M d" }} </a>
+				</li>
+			{% endfor %}
+		</ul>
+			
+		<li id="motion" class="sidelink"><span class="title bigtext">Motion</span></li>
+		<ul id="motionlist" class="hidden clearfix">
+			{% for motion in motions %}
+				<li> 
+					<a class='sidesublink smalltext' href="{% url 'association:detail_motion' motion.id %}"> {{ motion.date|date:"Y M d" }} </a>
+				</li>
+			{% endfor %}
+		</ul>
+		
+	</ul>
+</div>
+
+<div class="double" id="content">
+	{% block content %} {% endblock %}
+</div>
+
+{% endblock %}
