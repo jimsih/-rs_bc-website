@@ -36,10 +36,10 @@ def detail_motion(request, motion_id):
 	
 	
 def get_context():
-	statutes = Statute.objects.all()
-	boards = BoardMeeting.objects.all()
-	annuals = Annual.objects.all()
-	motions = Motion.objects.all()
+	statutes = Statute.objects.order_by('-date')
+	boards = BoardMeeting.objects.order_by('-date')
+	annuals = Annual.objects.order_by('-date')
+	motions = Motion.objects.order_by('-date')
 	
 	context = {'statutes':statutes, 'boards':boards, 'annuals':annuals, 'motions':motions}
 	return context

@@ -1,0 +1,48 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block page %}
+
+<div class="single" id="content">
+
+    <h2>Medlemmar</h2>
+	{% for member in members %}
+    
+    <div style="border:3px groove; padding:0px 10px 30px 10px; margin:10px auto; width:70%">
+      <figure>
+        <img style="width:13%; float:right" src="
+			{% if member.portrait %} 
+				{{ member.portrait.url }}
+			{% else %}
+				{% static 'home/img/arsbc.svg' %}
+			{% endif %}"
+		>
+      </figure>
+
+      <div style="text-align:justify; clear:left; width:100%">
+        <div style="float:left; width:20%">Namn</div>
+        <div style="float:left; width:40%">{{ member.first_name }} {{ member.last_name}}</div>
+      </div>
+      <div style="text-align:justify; clear:left; width:100%">
+        <div style="float:left; width:20%">Uppdrag</div>
+        <div style="float:left; width:40%">{{ member.office }}</div>
+      </div>
+      <div style="text-align:justify; clear:left; width:100%">
+        <div style="float:left; width:20%">Email</div>
+        <div style="float:left; width:40%">
+			{% if member.email %} 
+				{{ member.email }}
+			{% else %}
+				medlem@alidhembridge.se
+			{% endif %}
+		</div>
+      </div>
+    </div>
+
+	{% endfor %}
+
+</div>
+
+
+{% endblock %}

@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+	'members.apps.MembersConfig',
 		'association.apps.AssociationConfig',
 		'news.apps.NewsConfig',
 		'home.apps.HomeConfig',

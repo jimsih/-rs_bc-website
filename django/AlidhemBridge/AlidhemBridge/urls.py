@@ -22,6 +22,7 @@ urlpatterns = [
 	#url(r'^$', include('home.urls')),
 	url(r'^home/', include('home.urls')),
 	url(r'^news/', include('news.urls')),
+	url(r'^members/', include('members.urls')),
 	url(r'^association/', include('association.urls')),
   url(r'^admin/', admin.site.urls),
 ]
