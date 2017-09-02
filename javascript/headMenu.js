@@ -108,7 +108,8 @@ function buildAssociationPage(lang) {
 }
 
 function buildApplyPage(lang) {
-
+  $( "#page" ).load("pages/apply/apply.html", function() {
+  });
 }
 
 
