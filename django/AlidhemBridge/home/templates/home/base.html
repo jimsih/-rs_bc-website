@@ -1,0 +1,50 @@
+
+{% load static %}
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}" />
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" type="image/svg" href="{% static 'home/img/arsbc.svg' %}"/>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
+</head>
+
+<body class="main">
+
+	<div class="main">
+	
+		<div id="head">
+			<div id="logo"><img src="{% static 'home/img/arsbc.svg' %}" /></div>
+			<div id="name">
+				<div class="top">ÅLIDHEM</div>
+				<div class="middle left">ROYAL</div>
+				<div class="middle right">STRAIGHT</div>
+				<div class="low left clear">BRIDGE</div>
+				<div class="low right">CLUB</div>
+			</div>
+		</div>
+
+		<ul id="headMenu">
+			<a href="{% url 'home:index' %}">Hem</a>
+			<a href="{% url 'news:index' %}">Nyheter</a>
+			<a>Evenemang</a>
+			<a>Inlägg</a>
+			<a href="{% url 'members:index' %}"> Medlemmar</a>
+			<a href="{% url 'association:index' %}">Förening</a>
+			<a>Bli medlem</a>
+		</ul>
+	  
+	  <div id="page">
+			{% block page %}{% endblock %}
+	  </div>
+	</div>
+
+	<div id="foot" class="main">
+		<h2> ÅLIDHEM ROYAL STRAIGHT BRIDGE CLUB </h2>
+	</div>
+
+</body>
+

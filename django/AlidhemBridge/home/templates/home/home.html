@@ -1,0 +1,18 @@
+{% extends "home/base.html" %}
+
+{% block page %}
+
+	<ul class="submenu">
+		<a href="{% url 'home:start' %}">Start</a>
+		<a href="{% url 'home:faq' %}">Vanliga frågor</a>
+		<a >Om ÅRSBC</a>
+		<a >Brickor</a>
+	</ul>
+
+	<div class="single" id="content">
+		{% block content %} {% endblock %}
+	</div>
+
+	<div id="board"></div>
+
+{% endblock %}
