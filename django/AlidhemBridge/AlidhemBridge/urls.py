@@ -17,12 +17,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.views.generic import TemplateView	
 
 urlpatterns = [
 	url(r'^home/', include('home.urls')),
 	url(r'^news/', include('news.urls')),
+	url(r'^events/', include('events.urls')),
+	url(r'^forum/', TemplateView.as_view(template_name="home/construction.html")),
 	url(r'^members/', include('members.urls')),
 	url(r'^association/', include('association.urls')),
+	url(r'^apply/', TemplateView.as_view(template_name="home/construction.html")),
   url(r'^admin/', admin.site.urls),
 	
 	url(r'^', include('home.urls')),

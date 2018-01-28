@@ -30,11 +30,11 @@
 		<ul id="headMenu">
 			<a href="{% url 'home:index' %}">Hem</a>
 			<a href="{% url 'news:index' %}">Nyheter</a>
-			<a>Evenemang</a>
-			<a>Inlägg</a>
+			<a href="{% url 'events:index' %}">Evenemang</a>
+			<a href="/forum/">Inlägg</a>
 			<a href="{% url 'members:index' %}"> Medlemmar</a>
 			<a href="{% url 'association:index' %}">Förening</a>
-			<a>Bli medlem</a>
+			<a href="/apply/">Bli medlem</a>
 		</ul>
 	  
 	  <div id="page">

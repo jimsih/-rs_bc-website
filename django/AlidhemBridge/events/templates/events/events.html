@@ -1,0 +1,39 @@
+{% extends "home/base.html" %}
+
+{% load static %}
+
+{% block page %}
+
+{% if events %}
+
+<div class="sidelinkborder">
+  <ul id="side">
+		{% for event in events %}
+		<a class="sidelink {% if event.id == active.id %} active {% endif %}" href="{% url 'events:detail' event.id %}">
+		
+		<span class="title bigtext"> {{ event.title }} </span>
+	  <span class="date smalltext"> {{ event.date|date:"Y M d" }}</span>
+ 	  <span class="time smalltext"> {{ event.date|date:"H:i" }} </span>
+		
+		</a>
+		{% endfor %}
+	</ul>
+</div>
+
+<div class="double" id="content">
+	<div class="padding">
+		<h2> {{ active.title }} </h2>
+		<p class="news-free-text"> {{ active.description }} </p>
+	</div>
+</div>
+
+{% else %}
+	<span class="center">
+		<h2> Inga kommande evenemang </h2>
+		<figure>
+			<img width="25%" src="{% static 'home/img/arsbc.svg' %}">
+		</figure>
+	</span>
+{% endif %}
+
+{% endblock %}

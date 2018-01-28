@@ -31,9 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-	'members.apps.MembersConfig',
+		'members.apps.MembersConfig',
 		'association.apps.AssociationConfig',
 		'news.apps.NewsConfig',
+		'events.apps.EventsConfig',
 		'home.apps.HomeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
